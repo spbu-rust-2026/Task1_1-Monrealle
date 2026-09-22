@@ -7,8 +7,8 @@ fn main() {
 
     let mut numbers = input.split_whitespace();
 
-    let a: i32 = numbers.next().unwrap().parse().unwrap();
-    let b: i32 = numbers.next().unwrap().parse().unwrap();
+    let a: i64 = numbers.next().unwrap().parse().unwrap();
+    let b: i64 = numbers.next().unwrap().parse().unwrap();
 
     println!("{}", a + b);
 }
