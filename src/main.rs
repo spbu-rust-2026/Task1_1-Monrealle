@@ -1,3 +1,14 @@
+use std::io::{self, Read};
+
 fn main() {
-    println!("Hello, world!");
+    let mut input = String::new();
+
+    io::stdin().read_to_string(&mut input).unwrap();
+
+    let mut numbers = input.split_whitespace();
+
+    let a: i64 = numbers.next().unwrap().parse().unwrap();
+    let b: i64 = numbers.next().unwrap().parse().unwrap();
+
+    println!("{}", a + b);
 }
